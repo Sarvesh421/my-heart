@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Brother ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ================= Loader ================= -->
+
+    <div id="loader">
+
+        <h1>Loading Memories...</h1>
+
+        <div class="spinner"></div>
+
+    </div>
+
+    <!-- ================= PIN SCREEN ================= -->
+
+    <div id="lockScreen" style="display:none;">
+
+        <div class="login-box">
+
+            <h1>🎂 Birthday Surprise</h1>
+
+            <p>Enter Secret PIN</p>
+
+            <input
+                type="password"
+                id="pin"
+                maxlength="4"
+                placeholder="••••">
+
+            <button onclick="checkPin()">
+                Unlock ❤️
+            </button>
+
+            <p id="message"></p>
+
+        </div>
+
+    </div>
+
+    <!-- ================= WEBSITE ================= -->
+
+    <div id="main" style="display:none;">
+
+        <header>
+
+            <h1>🎂 Happy Birthday Brother 🎂</h1>
+
+            <p>Welcome to your Birthday Adventure ❤️</p>
+
+            <button id="startBtn">
+                Start Adventure 🚀
+            </button>
+
+        </header>
+
+        <section class="cards">
+
+            <!-- Childhood Memories -->
+
+            <div class="card">
+
+                <h2>📸 Childhood Memories</h2>
+
+                <p>See our unforgettable moments.</p>
+
+            </div>
+
+            <!-- Funny Quiz -->
+
+            <div class="card">
+
+                <h2>😂 Funny Quiz</h2>
+
+                <p>Let's see how much you remember!</p>
+
+            </div>
+
+            <!-- Games -->
+
+            <div class="card" onclick="window.location.href='puzzle.html'">
+
+                <h2>🎮 Games</h2>
+
+                <p>Play and unlock surprises.</p>
+
+            </div>
+
+            <!-- Secret Gift -->
+
+            <div class="card">
+
+                <h2>🎁 Secret Gift</h2>
+
+                <p>Only after completing everything!</p>
+
+            </div>
+
+        </section>
+
+        <footer>
+
+            Made with ❤️ by Your Brother Sarvesh
+
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

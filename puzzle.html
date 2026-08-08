@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Memory Puzzle 🧩</title>
+
+<link rel="stylesheet" href="puzzle.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<header>
+
+<h1>🧩 Childhood Memory Puzzle</h1>
+
+<p>Drag every piece into the correct position ❤️</p>
+
+</header>
+
+<div class="game-info">
+
+<div class="info-box">
+⏱ Time
+<h2 id="timer">00:00</h2>
+</div>
+
+<div class="info-box">
+🎯 Moves
+<h2 id="moves">0</h2>
+</div>
+
+<div class="info-box">
+⭐ Difficulty
+<h2>3 × 3</h2>
+</div>
+
+</div>
+
+<div class="buttons">
+
+<button id="previewBtn">
+👀 Preview
+</button>
+
+<button id="restartBtn">
+🔄 Shuffle Again
+</button>
+
+</div>
+
+<div class="container">
+
+<!-- Puzzle Board -->
+
+<div class="board">
+
+<h2>Puzzle Board</h2>
+
+<div id="dropZone" class="grid">
+
+<div class="slot" data-index="0"></div>
+<div class="slot" data-index="1"></div>
+<div class="slot" data-index="2"></div>
+
+<div class="slot" data-index="3"></div>
+<div class="slot" data-index="4"></div>
+<div class="slot" data-index="5"></div>
+
+<div class="slot" data-index="6"></div>
+<div class="slot" data-index="7"></div>
+<div class="slot" data-index="8"></div>
+
+</div>
+
+</div>
+
+<!-- Pieces -->
+
+<div class="pieces">
+
+<h2>Puzzle Pieces</h2>
+
+<div id="piecesContainer" class="grid">
+
+<!-- JavaScript adds pieces here -->
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Preview -->
+
+<div id="previewModal" class="preview">
+
+<div class="preview-content">
+
+<h2>Original Photo</h2>
+
+<img id="previewImage" src="images/1000012434.jpg">
+
+<button id="closePreview">
+
+Close
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Success -->
+
+<div id="success" class="success">
+
+<div class="success-box">
+
+<h1>🎉 Congratulations!</h1>
+
+<p>
+
+You rebuilt the childhood memory ❤️
+
+</p>
+
+<button id="playAgain">
+
+Play Again 🔄
+
+</button>
+
+</div>
+
+</div>
+
+<script src="puzzle.js"></script>
+
+</body>
+</html>
